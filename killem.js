@@ -19,7 +19,9 @@ const modal = allElements.find((el) => {
 if (modal) {
   modal.style.display = 'none';
 
-  if (getComputedStyle(document.body).overflowY === 'hidden') {
-    document.body.style.overflowY = 'scroll';
-  }
+  [document.body, document.documentElement].forEach(el => {
+    if (getComputedStyle(el).overflowY === 'hidden') {
+      el.style.setProperty('overflow-y', 'scroll', 'important');
+    }
+  });
 }
