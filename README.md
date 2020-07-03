@@ -1,4 +1,4 @@
-# Be Gone, Ye Modals!
+# Be Gone, Ye Modals! [![Build Status](https://travis-ci.org/carpeliam/modalsbegone.svg?branch=master)](https://travis-ci.org/carpeliam/modalsbegone)
 
 Modals. You've seen 'em, you've closed 'em. Sometimes you can't even find out how to close them, or maybe they're so insideous, they're *uncloseable*. Well, until now.
 
