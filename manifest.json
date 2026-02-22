@@ -1,6 +1,6 @@
 {
 	"name": "Modals B. Gone",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Remove pesky modals that block your screen from webpages you visit",
 	"manifest_version": 3,
 	"background": {
