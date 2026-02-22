@@ -1,4 +1,4 @@
-import slayTheModal from '../src/modalSlayer';
+import slayTheModal from '../src/modalSlayer.js';
 
 describe('the modal slayer', () => {
   beforeEach(() => {
@@ -25,7 +25,7 @@ describe('the modal slayer', () => {
   it('removes the evil modals', () => {
     slayTheModal();
 
-    expect(document.querySelectorAll('div').length).toEqual(1);
+    expect(document.querySelectorAll('#test-markup div').length).toEqual(1);
   });
 
   it('removes hidden overflow from html and body', () => {

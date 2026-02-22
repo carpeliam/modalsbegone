@@ -13,8 +13,8 @@ Because this modal sucks, and you don't. In fact, you probably rock, so hard tha
 Did you know it costs $5 to get a Google Developer Account, and submit an extension to the Chrome Web Store? I didn't. In the meantime, this is how you can get this modal-closing goodness in your **own** Chrome browser without having to wait for me to save me pennies:
 
 1. Clone this repository
-2. `yarn install --prod` (leave off the `--prod` if you want to run tests and the like)
-3. `yarn build`; this should produce a `dist/` directory with a `manifest.json` and other such goodies
+2. `npm install --production` (leave off the `--production` if you want to run tests and the like)
+3. `npm run build`; this should produce a `dist/` directory with a `manifest.json` and other such goodies
 4. Go to [your extensions](chrome://extensions/)
 5. Toggle "Developer mode" on the top right
 6. Click on the "Load unpacked" button that just showed up

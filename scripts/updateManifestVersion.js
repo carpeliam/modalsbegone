@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 
-const path = require('path');
-const fs = require('fs');
-const Manifest = require('chrome-manifest');
+import path from 'node:path';
+import fs from 'node:fs';
+import Manifest from 'chrome-manifest';
 
-const root = filename => path.join(__dirname, '..', filename);
+import packageJson from '../package.json' with { type: 'json' };
+import manifestJson from '../manifest.json' with { type: 'json' };
 
-const version = require(root('package.json')).version;
-const manifest = new Manifest(root('manifest.json'));
+const version = packageJson.version;
+const manifest = new Manifest(manifestJson);
 
 manifest.merge({ version });
 
-fs.writeFileSync(root('manifest.json'), manifest.toBuffer());
+fs.writeFileSync(path.join(import.meta.dirname, '..', 'manifest.json'), manifest.toBuffer());
