@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Update extension to match [Manifest v3](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3) standards
 - Update test runner to use streamlined jasmine browser runner, removing karma and puppeteer
+- Update packager to use parcel v2
 
 ## [0.1.0][] - 2020-07-03
 ### Added
